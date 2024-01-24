@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array & Template Strings Practice</title>
+</head>
+<body>
+    
+<h1>JavaScript Arrays & Template Strings</h1>
+
+<script>
+
+//examples of an array
+let scores = [100, 75, 50, 25, 0]
+let names = ["Nancy", "Steve", "Abby", "Carl"]
+
+names[2]; //answer would be Dustin because values are assigned starting with 0
+names.length; //answer would be 4 becaues there are 4 names in the array
+//What is the index of the name Carl? 3, because again, values are assigned starting with 0
+names.push("Sally"); //this expression adds the name Sally to the end of the array(list)
+
+//examples of concatenated string vs a template literal(string)
+
+//concatenated string
+let output1 = "Welcome to " + courseSubject + " " + courseNumber + "!Credits: " + courseCredits + "Length: " + courseLength;
+
+//template literal version
+let output2 = `Welcome to ${courseSubject} ${courseNumber}!Credits: ${courseCredits}Length: ${courseLength}`;
+
+//template literal example in action
+let temples = ["Rome", "Salt Lake", "Nauvoo"];
+let listItems = "";
+for (const temple of temples) {
+  listItems += `<li>${temple}</li>`; //this template literal makes the temples array into a usable list
+}
+document.querySelector("ul").innerHTML = listItems;
+
+</script>
+
+</body>
+</html>

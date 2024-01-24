@@ -1,0 +1,67 @@
+<html>
+<body>
+
+<h1>JavaScript Operators</h1>
+
+<p>y = 5, calculate x = y + 2:</p>
+<p>y = 5, calculate a = y - 2:</p>
+<p>y = 5, calculate x = y * 2:</p>
+
+<p id="add"></p>
+<p id="subtract"></p>
+<p id="multiply"></p>
+
+<script>
+//adding, subtracting, multiplying   
+let y = 5;
+let x = y + 2;
+let a = y - 2;
+let b = y * 2;
+
+//print results of calculations
+document.getElementById("add").innerHTML = "Value of x is: " + x;
+document.getElementById("subtract").innerHTML = "Value of a is: " + a;
+document.getElementById("multiply").innerHTML = "Value of b is: " + b;
+
+//combine strings
+let firstString = "Hello";
+let secondString = "World";
+let concatenatedString = firstString + " " + secondString;
+console.log(concatenatedString);
+
+//increase 5 by 3 in increments
+let increment = 5;
+increment += 3;
+console.log(increment);
+
+//compare two values
+let value1 = 10;
+let value2 = 20;
+
+//compare if equal
+if (value1 == value2) {
+    console.log("The values are the same");
+} else {
+    console.log("The values are different.");
+}
+
+//compare if greater or less than
+if (value1 > value2) {
+    console.log("Value 1 is greater than value two.");
+} else {
+    console.log("Value 1 is less than Value 2.");
+}
+
+//determine if value lies between two other values
+let value3 = 5;
+
+if (value3 < 10 && value3 > 0) {
+    console.log("The value is less than 10 and greater than 0.");
+} else {
+    console.log("The value does not meet the criteria.");
+}
+
+</script>
+
+</body>
+</html>
