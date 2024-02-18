@@ -5,17 +5,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>W06: Project - Space Wordle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-  <h1>W06: Project - Space Wordle</h1>
-  <h2>Rules</h2>
+  <nav>
+    <ul id="menu">
+      <li><a id="toggleMenu">&equiv;</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="w01-task.html">W1 Task</a></li>
+      <li><a href="w03-task.html">W3 Task</a></li>
+      <li><a href="w04-task.html">W4 Task</a></li>
+      <li><a href="w05-task.html" class="active">W5 Task</a></li>
+      <li><a href="project.html">Project</a></li>
+    </ul>
+  </nav>
+  <h1>_</h1>
+  <h2>W06: Project - Space Wordle - Rules</h2>
   <p1>Blue means you guessed the correct letter and placing. Yellow means you guessed the correct letter, but the placing is wrong. Grey means the letter is neither correct nor the right placing.</p>
     <p2 id="hidden-wordbank">Hidden Wordbank: Only click if you are having a difficult time.</p2>
     <button id="reveal-button">Click To View Wordbank</button>
 
 
+  <script src="scripts/main.js"></script>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
   <script src="scripts/project.js"></script>
 </body>
 
